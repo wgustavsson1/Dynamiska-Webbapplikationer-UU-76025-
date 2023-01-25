@@ -1,0 +1,33 @@
+body{
+    font-size: 100%;
+    color: #828282;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 22px;
+    background: url(images/header-img.png) no-repeat 50% 2%,url(images/body.png) repeat 0 0;
+    width: 980px;
+    margin: 2em auto;
+    padding: 4em;
+    border:1px solid #828282;
+}
+
+a{
+    color: #D17628;
+    text-decoration: none;
+}
+
+a:hover, a:focus{
+    text-decoration: underline;
+}
+
+img{
+    border: 0;
+}
+
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+fieldset{
+    margin-bottom: 2em;
+}

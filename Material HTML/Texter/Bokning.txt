@@ -1,0 +1,26 @@
+Boka Chokladprovning
+
+Välj datum: (radiobuttons)
+
+30 april
+2 maj
+7 maj
+9 maj
+14 maj
+16 maj
+
+
+Välj antal personer:
+Dropdown-lista med nummer 1-12
+
+Fyll i dina uppgifter
+Namn:
+Email:
+Mobilnummer:
+
+(textruta vid varje etikett)
+
+Meddelande:
+(textarea)
+
+Knapp för Bekräfta bokning

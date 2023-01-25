@@ -1,0 +1,220 @@
+@media only screen and (min-width:100px) and  (max-width: 640px)
+{
+    body
+    {
+        font-size: 0.5em;
+    }
+}
+@media only screen and (min-width:640px) and  (max-width: 700px)
+{
+    body
+    {
+        font-size: 0.6em;
+    }
+}
+@media only screen and (min-width:700px) and  (max-width: 1100px)
+{
+    body
+    {
+        font-size: 0.7em;
+    }
+}
+@media only screen and (min-width:1100px) and  (max-width: 16000px)
+{
+    body
+    {
+        font-size: 0.8em;
+    }
+}
+@media only screen and (min-width:1600px) and  (max-width: 1920px)
+{
+    body
+    {
+        font-size: 1em;
+    }
+}
+
+body
+{
+    font-family: 'Original Surfer', cursive;
+    overflow-x: hidden;
+}
+
+header
+{
+    margin:0;
+    padding: 2vw;
+    color: white;
+    background-color: rgb(6, 19, 47);
+}
+
+#container
+{
+    width: 100vw;
+    text-align: center;
+    background-color:rgba(71, 71, 248, 0.508);
+}
+
+nav
+{
+    width: 100vw;
+    left: 0;
+    height:5vh;
+    background-color: rgb(255, 163, 51);    
+    padding: 0;
+}
+
+nav ul
+{
+    
+    padding:0;
+    width: 100vw;
+    margin: 0 auto;
+}
+nav ul li
+{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 1.5em;
+    text-align: center;
+    display: inline;
+    list-style-type: none;
+    height: 5vh;
+    line-height: 5vh;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+nav ul li a
+{
+    color:white;
+    text-decoration: none;
+}
+nav ul li a:hover
+{
+    font-size: 1.5em;
+}
+main
+{
+    background-color:rgba(71, 71, 248, 0.508);
+    clear: both;
+}
+#products
+{
+    margin-top: 10vh;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 70vh 70vh;
+    grid-template-columns: 40vw 40vw;
+    margin-left: 9vw;
+}
+article
+{
+    margin-left: 1vw;
+    background-color: rgb(244, 251, 207);
+    margin-top:2vh;
+    border-radius: 1.5em;
+    padding: 5vw;
+}
+article img
+{
+    height:20vh;
+    width: 20vw;
+}
+article p
+{
+    text-align: left;
+    background-color: rgb(212, 212, 212);
+    padding: 1vw;
+    border-radius: 1.5em;
+}
+
+#classes
+{
+    background-color: rgb(255, 163, 51);
+    padding:1vw;
+    margin-top:10vh;
+    margin-bottom: 10vh;
+    width: 60vw;
+    margin-left: 19vw;
+    border:0.5em;
+    border-radius: 1.5em;
+}
+
+#story
+{
+    background-color: rgb(23, 23, 23);
+    color:white;
+    padding:5vw;
+    margin-top: 2vh;
+}
+#story p
+{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+#story p a
+{
+    text-decoration: none;
+    color: rgb(255, 163, 51);
+}
+img
+{
+    border-radius: 1.5em;
+}
+
+#newsletter
+{
+    padding: 1vw;
+    width: 100vw;
+    text-align: center;
+}
+#newsletter ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+#newsletter input
+{
+    color: white;
+    background-color: black;
+}
+
+#newsletter ul li ul li
+{
+    margin-left: 0.5vw;
+    padding: 0;
+    text-align: center;
+    float:left;
+}
+
+#newsletter ul li ul
+{
+    margin: 0 auto;
+    width: 15vw;
+    text-align: center;
+}
+#newsletter li input[type=Submit]
+{
+    position: relative;
+    clear:both;
+    top:1.5vh;
+    display: block;
+    text-align: center;
+    margin:0 auto;
+}
+footer
+{
+    width: 100vw;
+    clear: both;
+    bottom:0;
+    overflow:hidden ;
+    background-color: rgb(6, 19, 47);
+    color:white;
+}
+footer a
+{
+    color: rgb(255, 163, 51);
+    text-decoration: none;
+}

@@ -1,0 +1,191 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+@font-face {
+	font-family: FjallaOne-Regular;
+	src: url("../fonts/FjallaOne-Regular.otf") format("opentype");
+}
+
+html {
+	background: url('../img/bg.jpg') #fff no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	font-family: Verdana;
+	color: #000;
+}
+
+header {
+	height: 100px;
+	color: #000;
+	text-align: center;
+}
+
+header p {
+	font-size: 4em;
+	width: 960px;
+	margin: 0 auto;
+}
+
+.smallLogo {
+	font-size: 2em;
+	font-style: italic;
+}
+
+nav {
+	margin-top: 60px;
+	background-color: rgba(255, 255, 255, 0.9);
+	height: 70px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+ul {
+	padding-top: 25px;
+	list-style-type: none;
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+#active a {
+	color: red;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+main {
+	background-color: rgba(255, 255, 255, 0.9);
+	width: 960px;
+	margin: 40px auto 0 auto;
+	padding: 30px;
+	text-align: center;
+}
+
+main table {
+	margin: 0 auto;
+	width: 92%;
+	text-align: center;
+}
+
+main table tr td:first-child, main table tr th:first-child {
+	text-align: left;
+}
+
+#fotball {
+	opacity: 1;
+}
+
+.checkmark {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	-ms-transform: rotate(45deg);
+	/* IE 9 */
+	-webkit-transform: rotate(45deg);
+	/* Chrome, Safari, Opera */
+	transform: rotate(45deg);
+}
+
+.stem {
+	position: absolute;
+	width: 5px;
+	height: 11px;
+	background-color: green;
+	left: 11px;
+	top: 6px;
+}
+
+.kick {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background-color: green;
+	left: 8px;
+	top: 12px;
+}
+
+main hr {
+	margin: 40px;
+}
+
+main p {
+	padding-left: 250px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+footer {
+	background-color: rgba(255, 255, 255, 0.9);
+	padding-bottom: 25px;
+}
+
+footer nav {
+	background-color: transparent;
+}
+
+footer hr {
+	max-width: 960px;
+}
+
+table {
+	text-align: left;
+}
+
+hr {
+	height: 0;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	border: 0;
+	border-top: 1px solid #999999;
+}
+
+.red {
+	color: red;
+}
+
+h1, h2, nav, header {
+	font-family: FjallaOne-Regular;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+footer h2 {
+	color: red;
+}
