@@ -8,90 +8,99 @@
     </head>
     
     <body>
-        <h1>Café Choco-Latte</h1>
-        <h2>Fantastiskt kaffe & läckra bakverk</h2>
-        <p>
-            Vi vill vara en kaffeoas där du känner de intensiva dofterna från kaffet när du kliver in genom dörren.
-            Vi är en plats där du för varje kopp kaffe och bakverk ska uppleva en sann njutning och smaksensation.  
-            Vi vill ge dig hög kvalitet utan att tumma på rättvisan gentemot kaffe- och kakoodlarna.
-        </p>
-          <!--Här använder jag mig av en unordered list(ul) för att skapa en lista utan numerisk ordning. 
-            Jag valde ul eftersom att listelementen inte behöver vara ordnade-->
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href = "choco_testing.html">Chokladprovning</a></li>
-            <li><a href="booking.html">Boka chokladprovning</a></li>
-            <li><a href="cocoa_tree.html">Om kakaoträdet</a></li>
-        </ul>
+        <!--Här använder jag mig av header-elementet eftersom att det är ett sidohuvud som ska finnas i elementet alltså en header-->
+        <header>
+            <h1>Café Choco-Latte</h1>
+            <h2>Fantastiskt kaffe & läckra bakverk</h2>
+            <p>
+                Vi vill vara en kaffeoas där du känner de intensiva dofterna från kaffet när du kliver in genom dörren.
+                Vi är en plats där du för varje kopp kaffe och bakverk ska uppleva en sann njutning och smaksensation.  
+                Vi vill ge dig hög kvalitet utan att tumma på rättvisan gentemot kaffe- och kakoodlarna.
+            </p>
+        </header>
+        <!--Här använder jag mig av nav-elementet eftersom att det är en navigationsmeny som ska finnas inuti elementet-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href = "choco_testing.html">Chokladprovning</a></li>
+                <li><a href="booking.html">Boka chokladprovning</a></li>
+                <li><a href="cocoa_tree.html">Om kakaoträdet</a></li>
+            </ul>
+            <hr>
+        <nav>
+    <!--Här anväder jag mig av main-elementet eftersom att det inehåller dokumentets huvudinnehåll alltså dess main content-->
+    <main>
+            <!--Här använder jag mig av (form) elementet eftersom att vi ska skapa ett bokningsformulär -->
+        <form method="GET" action ="#">
+            <!--Här använder jag mig av (fieldset) elementet för att få en ram runt alla radioknappar med en titel (legend) -->
+            <fieldset id="group1">
+                <legend>Välj datum:</legend>
+
+                <!--Här använder jag mig av (input) eftersom att vi behöver radioknappar för att kunna välja ETT datum och inte FLERA datum -->
+                <input type="radio" name="radio" id="30_april"  value="30 april">
+                <label for="30_april">30 april</label><br>
+                    <!--Här använder jag mig av (label) med attributet (for) som kopplar titeln med texten 30 april till (input) med id = 30 april -->
+
+                <input type="radio" name="radio" id = "2_may"  value="2 maj">
+                <label for="2_may">2 may</label><br>
+
+                <input type="radio" name="radio" id = "7_may" value="7 maj">
+                <label for="7_may">7 maj</label><br>
+
+                <input type="radio" name="radio" id = "9_may" value="9 maj">
+                <label for="9_may">9 may</label><br>
+
+                <input type="radio" name="radio" id = "14_may" value="14 maj">
+                <label for="14_may">14 may</label><br>
+
+                <input type="radio" name="radio" id = "16_may" value="16 maj">
+                <label for="16_may">16 may</label><br>
+            </fieldset>
+
+            <!--Här använder jag mig av (fieldset) för att få en ram runt select elementet med en titel i (legend) -->
+            <fieldset id = "group2">
+                <legend>Välj antal personer:</legend>
+                <!--Här använder jag mig av (select) för att man ska kunna välja antal personer varje val är en (option) -->
+                <select id = "persons">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    </select>
+            </fieldset>
+
+            <!--Här använder jag mig av (fieldset) för att få en ram runt alla textfält med en titel i (legend) -->
+            <fieldset id = "group3">
+                <label for="name">Namn:</label> <!-- Här skapar jag en (label) med attributet (for) satt till name som är id hos textfälts elementet under-->
+                <input type="text" id = "name"> <!--Här använder jag mig av (input) för att skapa ett textfält där man kan skriva sitt namn-->
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="text" id = "email">
+                <br><br>
+
+                <label for="phonenr">Mobilnummer:</label>
+                <input type="text" id = "phonenr">
+                <br><br>
+
+                <label for="message">Meddelande:</label>
+                <textarea id = "message"></textarea><!--Här skapar jag en (textarea) istället för
+                        (input) detta för att man ska kunna skriva så långa meddelanden man vill-->
+                <br><br>
+
+                <button type="submit">Boka</button>
+
+            </fieldset>
+        </form>
         <hr>
-
-    <!--Här använder jag mig av (form) elementet eftersom att vi ska skapa ett bokningsformulär -->
-    <form method="GET" action ="#">
-         <!--Här använder jag mig av (fieldset) elementet för att få en ram runt alla radioknappar med en titel (legend) -->
-        <fieldset id="group1">
-            <legend>Välj datum:</legend>
-
-            <!--Här använder jag mig av (input) eftersom att vi behöver radioknappar för att kunna välja ETT datum och inte FLERA datum -->
-            <input type="radio" name="radio" id="30_april"  value="30 april">
-            <label for="30_april">30 april</label><br>
-             <!--Här använder jag mig av (label) med attributet (for) som kopplar titeln med texten 30 april till (input) med id = 30 april -->
-
-            <input type="radio" name="radio" id = "2_may"  value="2 maj">
-            <label for="2_may">2 may</label><br>
-
-            <input type="radio" name="radio" id = "7_may" value="7 maj">
-            <label for="7_may">7 maj</label><br>
-
-            <input type="radio" name="radio" id = "9_may" value="9 maj">
-            <label for="9_may">9 may</label><br>
-
-            <input type="radio" name="radio" id = "14_may" value="14 maj">
-            <label for="14_may">14 may</label><br>
-
-            <input type="radio" name="radio" id = "16_may" value="16 maj">
-            <label for="16_may">16 may</label><br>
-        </fieldset>
-
-        <!--Här använder jag mig av (fieldset) för att få en ram runt select elementet med en titel i (legend) -->
-        <fieldset id = "group2">
-            <legend>Välj antal personer:</legend>
-            <!--Här använder jag mig av (select) för att man ska kunna välja antal personer varje val är en (option) -->
-            <select id = "persons">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-             </select>
-        </fieldset>
-
-        <!--Här använder jag mig av (fieldset) för att få en ram runt alla textfält med en titel i (legend) -->
-        <fieldset id = "group3">
-            <label for="name">Namn:</label> <!-- Här skapar jag en (label) med attributet (for) satt till name som är id hos textfälts elementet under-->
-            <input type="text" id = "name"> <!--Här använder jag mig av (input) för att skapa ett textfält där man kan skriva sitt namn-->
-            <br><br>
-
-            <label for="email">Email:</label>
-            <input type="text" id = "email">
-            <br><br>
-
-            <label for="phonenr">Mobilnummer:</label>
-            <input type="text" id = "phonenr">
-            <br><br>
-
-            <label for="message">Meddelande:</label>
-            <textarea id = "message"></textarea><!--Här skapar jag en (textarea) istället för
-                 (input) detta för att man ska kunna skriva så långa meddelanden man vill-->
-            <br><br>
-
-            <button type="submit">Boka</button>
-
-        </fieldset>
-    </form>
-
-    <hr>
-    <p> Ⓒ Copyright 2022 | Café Choco-Latte</p>
+    </main>
+    
+        <!--Här använder jag mig av ett footer-element eftersom att det är en sidfot som ska finnas innanför elementet alltså en footer-->
+        <footer>
+            <p> Ⓒ Copyright 2022 | Café Choco-Latte</p>
+        </footer>
 
     </body>
 
