@@ -19,9 +19,10 @@ function display_data(data)
     for(const key in data.playedGames)
     {
         const m = data.playedGames[key];
-        var teams = m.teams;
-        var team_a = [teams[1].name,teams[1].homepage];
-        var team_b = [teams[2].name,teams[2].homepage];
+        console.log(m)
+        let teams = m.teams;
+        let team_a = [teams[1].name,teams[1].homepage];
+        let team_b = [teams[2].name,teams[2].homepage];
         const match = new Match(m.gameNumber,team_a,team_b,m.outcome);
         render_match_data(match);
     }
@@ -29,39 +30,40 @@ function display_data(data)
 
 function render_match_data(match)
 {
-    var table = document.getElementById("table")
-    var new_row = document.createElement("tr");
+    let table = document.getElementById("table")
+    let new_row = document.createElement("tr");
 
-    var td_number = document.createElement("td");
+    let td_number = document.createElement("td");
     td_number.innerHTML = match.game_number;
     new_row.appendChild(td_number);
 
-    var td_teams = document.createElement("td");
-    td_teams.innerHTML = match.team_a[0] + "-" + match.team_b[0];
+    let td_teams = document.createElement("td");
+    console.log(match.team_a[0])
+    td_teams.innerHTML = `<a href = "${match.team_a[1]}"> ${match.team_a[0]} </a> - <a href = "${match.team_b[1]}"> ${match.team_b[0]} </a>`
     new_row.appendChild(td_teams);
 
     table.appendChild(new_row)
 
     if(match.outcome == 'X')
     {
-        var td_empty = document.createElement("td");
+        let td_empty = document.createElement("td");
         new_row.appendChild(td_empty);
     }
     else if(match.outcome == '2')
     {
-        var td_empty_first = document.createElement("td");
-        var td_empty_second = document.createElement("td");
+        let td_empty_first = document.createElement("td");
+        let td_empty_second = document.createElement("td");
         new_row.appendChild(td_empty_first);
         new_row.appendChild(td_empty_second);
     }
-    var td = document.createElement("td");
-    var span = document.createElement("span");
+    let td = document.createElement("td");
+    let span = document.createElement("span");
     span.className = "checkmark";
 
-    var div_stem = document.createElement("div");
+    let div_stem = document.createElement("div");
     div_stem.className = "stem";
 
-    var div_kick = document.createElement("div");
+    let div_kick = document.createElement("div");
     div_kick.className = "kick";
     span.appendChild(div_stem);
     span.appendChild(div_kick);
